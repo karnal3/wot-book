@@ -36,6 +36,7 @@ var server = httpServer.listen(resources.pi.port, function () {
 
  // wersja początkowa:
  var httpServer = require('./servers/http'), //#A
+     wsServer = require('./servers/websockets'),
  resources = require('./resources/model');
 
   var ledsPlugin = require('./plugins/internal/ledsPlugin'), //#A
@@ -47,6 +48,8 @@ ledsPlugin.start({'false': true, 'frequency': 10000}); //#B
 dhtPlugin.start({'false': true, 'frequency': 10000}); //#B
 
  var server = httpServer.listen(resources.pi.port, function () { //#B
+     console.log('Uruchomiono serwer HTTP...');
+     wsServer.listen(server);
   console.info('Twoje webowe Pi jest uruchomione i działa na porcie %s', resources.pi.port); //#C
  });
 
