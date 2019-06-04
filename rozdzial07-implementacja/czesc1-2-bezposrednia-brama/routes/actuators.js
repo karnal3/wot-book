@@ -1,3 +1,4 @@
+/*
 var express = require('express'),
   router = express.Router(),
   resources = require('./../resources/model');
@@ -28,8 +29,8 @@ module.exports = router;
 //#B Funkcja zwrotna obsługująca żądania PUT skierowane do diody LED.
 //#C Aktualizacja wartości wybranej diody LED w modelu.
 
+*/
 
-/*
 //wersja początkowa:
 
 var express = require('express'),
@@ -56,4 +57,3 @@ module.exports = router;
 //#D Przy użyciu :id wstrzykujemy do ścieżki zmienną z numerem diody LED.
 //#E Zmienne ścieżki są dostępne przy użyciu req.params.id, używamy tej wartości by wybrać z modelu odpowiedni model i zwrócić go.
 
-*/

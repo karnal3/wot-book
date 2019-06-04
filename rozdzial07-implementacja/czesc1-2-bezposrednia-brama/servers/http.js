@@ -1,3 +1,4 @@
+/*
 // Final version
 var express = require('express'),
   actuatorsRoutes = require('./../routes/actuators'),
@@ -25,8 +26,8 @@ app.get('/pi', function (req, res) {
 app.use(converter());
 module.exports = app;
 
+*/
 
-/*
  //Wersja początkowa:
 
 var express = require('express'),
@@ -54,4 +55,3 @@ module.exports = app;
 //#D Powiązanie tras z aplikacją Express; skojarzenie ich z /pi/actuators/... oraz /pi/sensors/...
 //#E Utworzenie trasy domyślnej: /pi
 
-*/
