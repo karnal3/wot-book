@@ -34,8 +34,9 @@ var express = require('express'),
   actuatorsRoutes = require('./../routes/actuators'),
   sensorRoutes = require('./../routes/sensors'),
   resources = require('./../resources/model'), //#A
-  cors = require('cors'); 
   converter = require('./../middleware/converter'),
+  cors = require('cors'); 
+  
       
 var app = express(); //#B
 
