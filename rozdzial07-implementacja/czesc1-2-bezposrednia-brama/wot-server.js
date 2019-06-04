@@ -38,6 +38,14 @@ var server = httpServer.listen(resources.pi.port, function () {
  var httpServer = require('./servers/http'), //#A
  resources = require('./resources/model');
 
+  var ledsPlugin = require('./plugins/internal/ledsPlugin'), //#A
+  pirPlugin = require('./plugins/internal/pirPlugin'), //#A
+  dhtPlugin = require('./plugins/internal/DHT22SensorPlugin'); //#A
+
+pirPlugin.start({'false': true, 'frequency': 2000}); //#B
+ledsPlugin.start({'false': true, 'frequency': 10000}); //#B
+dhtPlugin.start({'false': true, 'frequency': 10000}); //#B
+
  var server = httpServer.listen(resources.pi.port, function () { //#B
   console.info('Twoje webowe Pi jest uruchomione i działa na porcie %s', resources.pi.port); //#C
  });
