@@ -1,4 +1,4 @@
-// wersja ostateczna
+/*/ wersja ostateczna
 var httpServer = require('./servers/http'),
   wsServer = require('./servers/websockets'),
   resources = require('./resources/model');
@@ -32,8 +32,8 @@ var server = httpServer.listen(resources.pi.port, function () {
 //#B Uruchomienie wtyczek z użyciem obiektów zawierających odpowiednie parametry, w tym przypadku uruchamiany je na laptopie, więc wtyczki mają działać w trybie symulacji.
 
 
+*/
 
-/*
  // wersja początkowa:
  var httpServer = require('./servers/http'), //#A
  resources = require('./resources/model');
@@ -45,5 +45,5 @@ var server = httpServer.listen(resources.pi.port, function () {
  //#A Wczytanie serwera HTTP i modelu.
  //#B Uruchomienie serwera HTTP poprzez wywołanie funkcji listen() obiektu aplikcji Express.
  //#C Po uruchomieniu serwera zostanie wywołana funkcja zwrotna.
- */
+ 
 
