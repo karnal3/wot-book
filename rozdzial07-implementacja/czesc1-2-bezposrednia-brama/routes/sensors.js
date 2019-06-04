@@ -1,5 +1,4 @@
 // wersja ostateczna
-/*
 var express = require('express'),
   router = express.Router(),
   resources = require('./../resources/model');
@@ -29,9 +28,9 @@ module.exports = router;
 //#A Przypisanie wyniku do nowej właściwości obiektu req, przekazywanego od jednego oprogramowania warstwy pośredniej do drugiego.
 //#B Wywołanie następnego oprogramowania warstwy pośredniej; framework zapewnia, że oprogramowanie to będzie mieć dostęp do obiektów req (włącznie z właściwością req.result) oraz res.
 
-*/
 
 
+/*
 // Wersja początkowa
 var express = require('express'),
   router = express.Router(), //#A
@@ -61,3 +60,4 @@ module.exports = router; //#F
 //#D Ta trasa obsługuje pasywny czujnik podczerwieni.
 //#E Te trasy obsługują czujnik temperatury i wilgotności.
 //#F Wyeksportowanie obiektu router, aby udostępnić go we wszystkich plikach, które wczytają go używając require.
+*/

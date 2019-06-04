@@ -35,7 +35,8 @@ var express = require('express'),
   sensorRoutes = require('./../routes/sensors'),
   resources = require('./../resources/model'), //#A
   cors = require('cors'); 
-
+  converter = require('./../middleware/converter'),
+      
 var app = express(); //#B
 
 app.use(cors()); //#C
@@ -47,6 +48,7 @@ app.get('/pi', function (req, res) { //#E
   res.send('To jest webowe Pi!')
 });
 
+app.use(converter());
 module.exports = app;
 
 //#A Wczytanie frameworku Express, zdefiniowanych wcześniej tras oraz modelu.
