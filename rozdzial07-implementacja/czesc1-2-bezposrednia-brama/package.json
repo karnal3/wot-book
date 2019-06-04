@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Błąd: nie określono żadnych testów\" && exit 1"
   },
-  "author": "Dominique Guinard",
   "author": "Vlad Trifa",
   "license": "Apache-2.0",
   "keywords": [
