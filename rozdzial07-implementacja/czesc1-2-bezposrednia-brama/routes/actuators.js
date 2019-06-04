@@ -53,6 +53,11 @@ router.route('/leds/:id').get(function (req, res, next) { //#D
   //res.send(resources.pi.actuators.leds[req.params.id]); //#E
     req.result = resources.pi.actuators.leds[req.params.id];
   next();
+}).put(function(req, res, next) { //#B
+  var selectedLed = resources.pi.actuators.leds[req.params.id];
+  selectedLed.value = req.body.value; //#C
+  req.result = selectedLed;
+  next();
 });
 
 module.exports = router;
