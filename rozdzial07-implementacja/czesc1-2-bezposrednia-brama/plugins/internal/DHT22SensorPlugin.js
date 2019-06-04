@@ -4,7 +4,7 @@ var resources = require('./../../resources/model'),
 var interval, sensor;
 var model = resources.pi.sensors;
 var pluginName = 'Temperatura i wilgoność';
-var localParams = {'simulate': false, 'frequency': 5000};
+var localParams = {'simulate': false, 'frequency': 1000};
 
 exports.start = function (params) {
   localParams = params;
