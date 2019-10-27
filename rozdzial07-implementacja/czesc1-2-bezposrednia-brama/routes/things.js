@@ -13,5 +13,10 @@ router.route('/coapDevice/sensors/co2').get(function (req, res, next) {
   next();
 });
 
+router.route('/coapDevice/sensors/temp').get(function (req, res, next) {
+  req.result = resources.things.coapDevice.sensors.temp;
+  next();
+});
+
 
 module.exports = router;
