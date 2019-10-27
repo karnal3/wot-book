@@ -47,6 +47,9 @@ pirPlugin.start({'false': true, 'frequency': 2000}); //#B
 ledsPlugin.start({'false': true, 'frequency': 10000}); //#B
 dhtPlugin.start({'false': true, 'frequency': 10000}); //#B
 
+var coapPlugin = require('./plugins/external/coapPlugin');
+coapPlugin.start({'simulate': false, 'frequency': 10000});
+
  var server = httpServer.listen(resources.pi.port, function () { //#B
      console.log('Uruchomiono serwer HTTP...');
      wsServer.listen(server);

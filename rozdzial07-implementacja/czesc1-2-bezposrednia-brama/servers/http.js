@@ -33,6 +33,7 @@ module.exports = app;
 var express = require('express'),
   actuatorsRoutes = require('./../routes/actuators'),
   sensorRoutes = require('./../routes/sensors'),
+    thingsRoutes = require('./../routes/things'),
   resources = require('./../resources/model'), //#A
   converter = require('./../middleware/converter'),
   cors = require('cors'),
@@ -47,6 +48,7 @@ app.use(cors()); //#C
 
 app.use('/pi/actuators', actuatorsRoutes); //#D
 app.use('/pi/sensors', sensorRoutes);
+app.use('/things', thingsRoutes);
 
 app.get('/pi', function (req, res) { //#E
   res.send('To jest webowe Pi!')

@@ -8,5 +8,10 @@ router.route('/coapDevice/sensors/:id').get(function (req, res, next) {
   next();
 });
 
+router.route('/coapDevice/sensors/co2').get(function (req, res, next) {
+  req.result = resources.things.coapDevice.sensors.co2;
+  next();
+});
+
 
 module.exports = router;
