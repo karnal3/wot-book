@@ -25,7 +25,7 @@ var server = httpServer.listen(resources.pi.port, function () {
 
   // serwer Websocket
   wsServer.listen(server);
-lol
+lol lolqw
   console.info('Twoje webowe Pi jest skonfigurowane i działa na porcie %s', resources.pi.port);
 });
 //#A Wczytanie wszystkich niezbędnych wtyczek.
