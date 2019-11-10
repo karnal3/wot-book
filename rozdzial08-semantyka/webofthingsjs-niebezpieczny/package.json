@@ -1,6 +1,7 @@
 {
   "name": "webofthings",
   "version": "0.1.0",
+  "private": true,
   "description": "Działający w oparciu o Node.js serwer i brama dla linuksowych urządzeń WWW rzeczy, takich jak: Raspberry Pi, Beaglebone, Edison lub Samsung Artik",
   "main": "wot.js",
   "scripts": {
