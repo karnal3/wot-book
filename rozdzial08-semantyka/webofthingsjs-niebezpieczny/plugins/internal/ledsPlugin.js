@@ -34,7 +34,7 @@ function simulate() {
 };
 
 LedsPlugin.prototype.createValue = function (data){
-  return {"1" : data, "2" : false, "timestamp" : utils.isoTimestamp()};
+  return {"1" : data, "2" : true, "timestamp" : utils.isoTimestamp()};
 };
 
 LedsPlugin.prototype.connectHardware = function () { //#F
