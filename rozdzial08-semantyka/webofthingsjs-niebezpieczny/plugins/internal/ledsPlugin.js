@@ -6,7 +6,7 @@ var actuator, model;
 
 var LedsPlugin = exports.LedsPlugin = function (params) { //#A
   CorePlugin.call(this, params, 'leds',
-    stop, simulate, ['ledState'], switchOnOff); //#B
+    stop, false, ['ledState'], switchOnOff); //#B
   model = this.model;
   this.addValue(false);
 };
