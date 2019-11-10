@@ -37,7 +37,7 @@ Dht22Plugin.prototype.connectHardware = function () {
   sensor = {
     initialize: function () {
       console.log('Uruchamianie czujnika na porcie GPIO, %s', self.model.values.t.customFields.gpio);
-      return sensorDriver.initialize(22, self.model.values.t.customFields.gpio);
+      return sensorDriver.initialize(11, self.model.values.t.customFields.gpio);
     },
     read: function () {
       var readout = sensorDriver.read();
