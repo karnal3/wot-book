@@ -5,7 +5,7 @@ var CorePlugin = require('./../corePlugin').CorePlugin,
 var sensor, model;
 
 var PirPlugin = exports.PirPlugin = function (params) {
-  CorePlugin.call(this, params, 'pir', stop, false);
+  CorePlugin.call(this, params, 'pir', stop, connectHardware);
   model = this.model;
   this.addValue(true);
 };
