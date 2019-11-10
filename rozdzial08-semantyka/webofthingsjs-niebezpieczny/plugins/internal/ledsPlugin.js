@@ -5,7 +5,7 @@ var CorePlugin = require('./../corePlugin').CorePlugin,
 var actuator, model;
 
 var LedsPlugin = exports.LedsPlugin = function (params) { //#A
-  CorePlugin.call(this, params, 'leds',
+  CorePlugin.call(this, false, 'leds',
     stop, simulate, ['ledState'], switchOnOff); //#B
   model = this.model;
   this.addValue(false);
