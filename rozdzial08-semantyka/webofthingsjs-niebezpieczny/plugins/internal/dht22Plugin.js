@@ -5,7 +5,7 @@ var CorePlugin = require('./../corePlugin').CorePlugin,
 var modelTemperature, modelHumidity, sensor, interval;
 
 var Dht22Plugin = exports.Dht22Plugin = function (params) {
-  CorePlugin.call(this, params, 'temperature', stop, connectHardware, null, null);
+  CorePlugin.call(this, params, 'temperature', stop, simulate, null, null);
   modelTemperature = this.model;
   modelHumidity = utils.findProperty('humidity');
 
