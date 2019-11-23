@@ -40,11 +40,13 @@ lol lolqw asdassa
  resources = require('./resources/model');
 
   var ledsPlugin = require('./plugins/internal/ledsPlugin'), //#A
+  ledsPlugin2 = require('./plugins/internal/ledsPlugin2'), //#A
   pirPlugin = require('./plugins/internal/pirPlugin'), //#A
   dhtPlugin = require('./plugins/internal/DHT22SensorPlugin'); //#A
 
 pirPlugin.start({'simulate': false, 'frequency': 2000}); //#B
 ledsPlugin.start({'simulate': false, 'frequency': 10000}); //#B
+ledsPlugin2.start({'simulate': false, 'frequency': 10000}); //#B
 dhtPlugin.start({'simulate': false, 'frequency': 10000}); //#B
 
 var coapPlugin = require('./plugins/external/coapPlugin');
