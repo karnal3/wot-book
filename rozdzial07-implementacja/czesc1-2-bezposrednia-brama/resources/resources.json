@@ -30,7 +30,7 @@
         "2": {
           "name": "LED 2",
           "value": false,
-          "gpio": 21
+          "gpio": 9
         },
         "1": {
           "name": "LED 1",
