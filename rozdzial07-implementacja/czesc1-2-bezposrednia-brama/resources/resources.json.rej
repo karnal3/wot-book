@@ -1,0 +1,10 @@
+diff a/rozdzial07-implementacja/czesc1-2-bezposrednia-brama/resources/resources.json b/rozdzial07-implementacja/czesc1-2-bezposrednia-brama/resources/resources.json	(rejected hunks)
+@@ -34,7 +34,7 @@
+         },
+         "2": {
+           "name": "LED 2",
+-          "value": false,
++          "value": true,
+           "gpio": 9
+         }
+       }
