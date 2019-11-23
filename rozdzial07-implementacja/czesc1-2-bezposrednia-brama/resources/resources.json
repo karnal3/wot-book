@@ -34,7 +34,7 @@
         },
         "2": {
           "name": "LED 2",
-          "value": false,
+          "value": true,
           "gpio": 9
         }
       }

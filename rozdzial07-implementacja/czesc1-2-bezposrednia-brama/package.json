@@ -1,7 +1,7 @@
 {
   "name": "wot-pi",
   "version": "1.0.0",
-  "description": "Serwer rzeczy webowej dla Raspberry Pi",
+  "description": "Serwer rzeczy webowej dla Raspberry Pi npm install bl body-parser coap cors express msgpack5 node-json2html ws     ",
   "main": "wot-pi.js",
   "scripts": {
     "test": "echo \"Błąd: nie określono żadnych testów\" && exit 1"
