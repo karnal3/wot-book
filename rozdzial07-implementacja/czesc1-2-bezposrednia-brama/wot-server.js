@@ -43,9 +43,9 @@ lol lolqw asdassa
   pirPlugin = require('./plugins/internal/pirPlugin'), //#A
   dhtPlugin = require('./plugins/internal/DHT22SensorPlugin'); //#A
 
-pirPlugin.start({'false': true, 'frequency': 2000}); //#B
-ledsPlugin.start({'false': true, 'frequency': 10000}); //#B
-dhtPlugin.start({'false': true, 'frequency': 10000}); //#B
+pirPlugin.start({'simulate': false, 'frequency': 2000}); //#B
+ledsPlugin.start({'simulate': false, 'frequency': 10000}); //#B
+dhtPlugin.start({'simulate': false, 'frequency': 10000}); //#B
 
 var coapPlugin = require('./plugins/external/coapPlugin');
 coapPlugin.start({'simulate': false, 'frequency': 10000});
