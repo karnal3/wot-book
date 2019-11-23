@@ -1,7 +1,7 @@
 {
   "pi": {
     "name": "Webowe Pi",
-    "description": "Proste Raspberry Pi podłączone do WWW rzeczy.",
+    "description": "Proste Raspberry Psi podłączone do WWW rzeczy.",
     "port": 8484,
     "sensors": {
       "temperature": {
