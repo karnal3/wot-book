@@ -45,6 +45,7 @@ lol lolqw asdassa
 
 pirPlugin.start({'simulate': false, 'frequency': 2000}); //#B
 ledsPlugin.start({'simulate': false, 'frequency': 10000}); //#B
+ledsPlugin.start({'simulate': false, 'frequency': 10000}); //#B
 dhtPlugin.start({'simulate': false, 'frequency': 10000}); //#B
 
 var coapPlugin = require('./plugins/external/coapPlugin');
